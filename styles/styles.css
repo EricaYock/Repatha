@@ -84,6 +84,41 @@ header {
   height: var(--nav-height);
 }
 
+h1 {
+  color: #003976;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+}
+h2 {
+  color: #C93B31;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+}
+h3 {
+  color:#03134B;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+}
+h4 {
+  color:white;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+}
+h5 {
+  color:#03134B;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+}
+h6 {
+  color: #C93B31;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  scroll-margin: calc(var(--nav-height) + 1em);
+}
+
 h1,
 h2,
 h3,
