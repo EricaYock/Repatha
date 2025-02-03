@@ -15,7 +15,7 @@ export default function decorate(block) {
   adventureDiv.id = 'adventure-${slug}';
   quoteDiv.replaceWith(adventureDiv);
 
-  fetch('${AEM_HOST}/graphql/execute.json/aem-demo-assets/adventure-by-slug;slug=${slug}')
+  fetch('${AEM_HOST}/graphql/execute.json/repatha/adventure-by-slug;slug=${slug}')
     .then((response) => response.json())
     .then((response) => {
       const backgroundImage = response.data.adventureList.items[0].primaryImage._path;
