@@ -19,9 +19,14 @@ export default function decorate(block) {
     .then((response) => response.json())
     .then((response) => {
 
-      const repatha = response.data.importantSafetyInformationList.items[0].importantSafetyInformation.plaintext;
-      document.getElementById(adventureDiv.id).innerHTML += `<section><h3>${repatha}</h3></section>`;
+      const repatha1 = response.data.importantSafetyInformationList.items[0].importantSafetyInformation.plaintext;
+      document.getElementById(adventureDiv.id).innerHTML += `<p>${repatha1}</p>`;
 
+      const repatha2 = response.data.importantSafetyInformationList.items[0].whatIsRepatha.plaintext;
+      document.getElementById(adventureDiv.id).innerHTML += `<p>${repatha2}</p>`;
+
+      const repatha3 = response.data.importantSafetyInformationList.items[0].whatAreThePossibleSideEffectsOfRepatha.plaintext;
+      document.getElementById(adventureDiv.id).innerHTML += `<p>${repatha3}</p>`;
       /*
 const tripItinerary= response.data.adventureList.items[0].itinerary.html;
 document.getElementById(adventureDiv.id).innerHTML += "<section>" + "Itinerary: </br>" + tripItinerary + "</section>";
