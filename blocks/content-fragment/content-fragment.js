@@ -19,7 +19,7 @@ export default function decorate(block) {
     .then((response) => response.json())
     .then((response) => {
 
-      const repatha = response.data.importantSafetyInformationList.items[0].importantSafetyInformation;
+      const repatha = response.data.importantSafetyInformationList.items[0].importantSafetyInformation.plaintext;
       document.getElementById(adventureDiv.id).innerHTML += `<section><h3>${repatha}</h3></section>`;
 
       /*
