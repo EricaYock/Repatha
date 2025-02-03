@@ -19,13 +19,13 @@ export default function decorate(block) {
     .then((response) => response.json())
     .then((response) => {
 
-      const repatha1 = response.data.importantSafetyInformationList.items[0].importantSafetyInformation.plaintext;
+      const repatha1 = response.data.importantSafetyInformationList.items[0].importantSafetyInformation.innerHTML;
       document.getElementById(adventureDiv.id).innerHTML += `<p>${repatha1}</p>`;
 
-      const repatha2 = response.data.importantSafetyInformationList.items[0].whatIsRepatha.plaintext;
+      const repatha2 = response.data.importantSafetyInformationList.items[0].whatIsRepatha.innerHTML;
       document.getElementById(adventureDiv.id).innerHTML += `<p>${repatha2}</p>`;
 
-      const repatha3 = response.data.importantSafetyInformationList.items[0].whatAreThePossibleSideEffectsOfRepatha.plaintext;
+      const repatha3 = response.data.importantSafetyInformationList.items[0].whatAreThePossibleSideEffectsOfRepatha.innerHTML;
       document.getElementById(adventureDiv.id).innerHTML += `<p>${repatha3}</p>`;
       /*
 const tripItinerary= response.data.adventureList.items[0].itinerary.html;
