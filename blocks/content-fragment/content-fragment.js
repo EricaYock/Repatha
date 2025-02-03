@@ -15,7 +15,7 @@ export default function decorate(block) {
   adventureDiv.id = 'adventure-${slug}';
   quoteDiv.replaceWith(adventureDiv);
 
-  fetch('${AEM_HOST}/graphql/execute.json/repatha/repatha;slug=${slug}')
+  fetch(`${AEM_HOST}/graphql/execute.json/repatha/repatha;slug=${slug}`)
     .then((response) => response.json())
     .then((response) => {
 
